@@ -133,5 +133,13 @@ namespace MudBlazor
             _scrollListener.OnScroll -= ScrollListener_OnScroll;
             _scrollListener.Dispose();
         }
+
+        /// <summary>
+        /// Activates the scroll to top function
+        /// </summary>
+        public void Activate()
+        {
+            OnClick();
+        }
     }
 }
